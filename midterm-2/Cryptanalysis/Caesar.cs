@@ -1,4 +1,5 @@
 using System;
+using System.Xml;
 
 namespace Cryptanalysis
 {
@@ -20,6 +21,10 @@ public class Caesar
                 res += Tools.RotChar(lettre, key);
 
             }
+            else
+            {
+                res += lettre;
+            }
             
         }
 
@@ -35,6 +40,10 @@ public class Caesar
             {
                 res += Tools.RotChar(lettre, -key);
 
+            }
+            else
+            {
+                res += lettre;
             }
             
         }
