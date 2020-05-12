@@ -70,7 +70,20 @@ public static class Tools
 
     public static int[] Histogram(string str)
     {
-        
+        int[] histo = new int[26];
+        foreach (var lettre in str)
+        {
+            if (LetterIndex(lettre) != -1)
+            {
+                histo[LetterIndex(lettre)] += 1;
+
+            }
+            
+        }
+
+        return histo;
+
+
     }
     
     public static string FilterLetters(string str)
