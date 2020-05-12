@@ -90,7 +90,19 @@ public static class Tools
     
     public static string FilterLetters(string str)
     {
-        throw new NotImplementedException();
+        string res = "";
+        foreach (var lettre in str)
+        {
+            if (LetterIndex(lettre) != -1)
+            {
+                res += lettre;
+
+            }
+            
+        }
+
+        return res;
+
     }
 
     public static string Extract(string str, int start, int step)

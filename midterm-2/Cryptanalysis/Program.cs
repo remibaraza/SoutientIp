@@ -8,7 +8,7 @@ internal static class Program
     {
         // Put your tests here.
         Caesar simple = new Caesar(3);
-        Console.Write(simple.Encrypt("My exam is so interesting! Thanks ACDC <3"));
+        Console.Write(("My exam is so interesting! Thanks ACDC <3"));
 
 
     }
