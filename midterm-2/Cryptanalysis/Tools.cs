@@ -40,6 +40,8 @@ public static class Tools
                 return Convert.ToChar(((conv + n) % 90) + 65);
 
             }
+
+           
             else // Sans depassement 
             {
                 return Convert.ToChar(conv + n);

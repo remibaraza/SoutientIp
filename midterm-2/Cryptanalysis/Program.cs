@@ -8,7 +8,7 @@ internal static class Program
     {
         // Put your tests here.
 
-       Console.Write(Tools.RotChar('Y', 2));
+       Test();
     }
 
     private static void Test()

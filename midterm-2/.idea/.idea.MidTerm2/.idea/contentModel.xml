@@ -13,6 +13,9 @@
             <e p="net472" t="Include">
               <e p="Cryptanalysis.AssemblyInfo.cs" t="Include" />
             </e>
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Cryptanalysis.AssemblyInfo.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Program.cs" t="Include" />
