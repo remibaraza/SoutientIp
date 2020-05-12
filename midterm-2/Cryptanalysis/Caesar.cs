@@ -58,12 +58,24 @@ public class Caesar
         
         int[] res = Tools.Histogram(cypherText);
         int pmax = 0;
+        int i = 0;
         foreach (var occ in res)
         {
+            if (occ > pmax)
+            {
+                pmax = i;
+            }
 
-           
+            else
+            {
+                i++;
+                
+            }
+
             
-            
+
+
+
 
 
 
