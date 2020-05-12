@@ -36,14 +36,30 @@ public static class Tools
         {
             if (conv + n >= 90) // Depassement
             {
-                int inter = (((conv + n) % 26) + 65);
-                return Convert.ToChar(((conv + n) % 26) + 65);
+                int inter = (((conv + n) % 90) + 65);
+                return Convert.ToChar(((conv + n) % 90) + 65);
 
             }
             else // Sans depassement 
             {
                 return Convert.ToChar(conv + n);
             }
+            
+        }
+
+        if (conv >= 97 && conv <= 122)
+        {
+            if (conv + n >= 122) // Depassement
+            {
+                int inter = (((conv + n) % 122) + 97);
+                return Convert.ToChar(((conv + n) % 122) + 97);
+
+            }
+            else // Sans depassement 
+            {
+                return Convert.ToChar(conv + n);
+            }
+        
             
         }
 
@@ -54,7 +70,7 @@ public static class Tools
 
     public static int[] Histogram(string str)
     {
-        throw new NotImplementedException();
+        
     }
     
     public static string FilterLetters(string str)
